@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Tests_v0001</string>
+
+    <string name="hello_text">Hello</string>
+    <string name="reg_title">Registration</string>
+    <string name="log_title">Log in</string>
+
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="password_confirm">Repeat Password</string>
+    <string name="email">Email</string>
+</resources>
