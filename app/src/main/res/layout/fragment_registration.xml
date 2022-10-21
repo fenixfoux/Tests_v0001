@@ -75,17 +75,54 @@
     <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="match_parent"
+        android:hint="@string/email"
         android:layout_height="@dimen/standart_field_height"
         android:ems="10"
+        android:layout_marginBottom="@dimen/field_margin_vert"
         android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/editTextPhone"
         android:layout_width="match_parent"
+        android:hint="@string/phone_number"
         android:layout_height="@dimen/standart_field_height"
         android:ems="10"
+        android:layout_marginBottom="@dimen/field_margin_vert"
         android:inputType="phone"  />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <Button
+            android:id="@+id/button_registration"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:text="@string/registration" />
+        <Button
+            android:id="@+id/button_log_in"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:text="@string/login" />
+    </LinearLayout>
 
+    <TextView
+        android:id="@+id/txt_for_err"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/title_H1"
+        android:layout_marginTop="@dimen/field_margin_vert"
+        android:layout_marginBottom="@dimen/field_margin_vert"
+        android:textAlignment="center"
+        />
 
 </LinearLayout>

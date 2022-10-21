@@ -9,6 +9,7 @@
     <string name="last_name">Last Name</string>
     <string name="phone_number">Phone Number</string>
     <string name="login">Login</string>
+    <string name="registration">Registration</string>
     <string name="password">Password</string>
     <string name="password_confirm">Repeat Password</string>
     <string name="email">Email</string>
