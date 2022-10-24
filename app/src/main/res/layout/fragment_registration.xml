@@ -73,7 +73,7 @@
         />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/user_email"
         android:layout_width="match_parent"
         android:hint="@string/email"
         android:layout_height="@dimen/standart_field_height"
@@ -82,7 +82,7 @@
         android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/user_phone"
         android:layout_width="match_parent"
         android:hint="@string/phone_number"
         android:layout_height="@dimen/standart_field_height"
@@ -97,12 +97,12 @@
         android:weightSum="2"
         >
         <Button
-            android:id="@+id/button_registration"
+            android:id="@+id/button_save"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_marginLeft="10dp"
             android:layout_height="wrap_content"
-            android:text="@string/registration" />
+            android:text="@string/save" />
         <Button
             android:id="@+id/button_log_in"
             android:layout_width="0dp"
