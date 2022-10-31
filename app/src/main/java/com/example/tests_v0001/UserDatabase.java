@@ -25,7 +25,7 @@ public abstract class UserDatabase extends RoomDatabase {
     private static UserDatabase buildDatabaseInstance(Context context){
         return Room.databaseBuilder(context,
                 UserDatabase.class,
-                DB_NAME).allowMainThreadQueries().build(); //спросить у Лёни если он будет
+                DB_NAME).allowMainThreadQueries().build(); //разрешает запросы в главном потоке
     }
 
     public void cleanUp(){

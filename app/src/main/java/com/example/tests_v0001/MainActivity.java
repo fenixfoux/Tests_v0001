@@ -20,9 +20,20 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_log_in);
+        setContentView(R.layout.activity_main);
+
+        if(savedInstanceState == null){
+            getSupportFragmentManager().beginTransaction()
+                    .setReorderingAllowed(true)
+                    .add(R.id.fragment_container_view, ExampleFragment.class, null)
+                    .commit();
+        }
 
 
+        //Button bt_test_fragment = (Button)findViewById(R.id.button_test);
+
+        //Button bt_test = (Button)findViewById(R.id.bt_test_fragment);
+        /*
         Button bt_log = (Button)findViewById(R.id.button_log_in);
         bt_log.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,14 +51,15 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                     finish();
                 }catch(Exception e){
-                    /*backToast = Toast.makeText(getBaseContext(), "Error: " + e, Toast.LENGTH_SHORT);
-                    backToast.show();*/
+                    //backToast = Toast.makeText(getBaseContext(), "Error: " + e, Toast.LENGTH_SHORT);
+                    //backToast.show();
                     TextView error_text = (TextView)findViewById(R.id.txt_for_err);
                     error_text.setText("Error: " + e);
                     //error may be
                 }
             }
         });
+        */
     }
 
 

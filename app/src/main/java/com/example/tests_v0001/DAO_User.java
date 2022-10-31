@@ -12,7 +12,7 @@ import java.util.List;
 
 @Dao
 public interface DAO_User {
-    @Query("SELECT * FROM user") //спросить у Лёни если он будет
+    @Query("SELECT * FROM user") //user - is a table name
     List<User> getAll();
     /*
      * Insert the object in database

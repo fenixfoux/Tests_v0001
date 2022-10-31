@@ -20,6 +20,17 @@
         android:textAlignment="center"
         />
 
+    <Button
+        android:id="@+id/bt_test_fragment"
+        android:layout_width="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text="@string/save" />
+    <Button
+        android:id="@+id/button_test"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/test" />
     <LinearLayout
         android:id="@+id/main_preview"
         android:orientation="vertical"
